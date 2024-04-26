@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="Mutistepform.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="crousel">
+
+
+        
+    <div id="form1" class="parent-conatiner">
+
+        
+     
+
+    
+     <form>
+          
+            <!-- <div class="child-container"> -->
+
+                <div class="step step1">
+                    <div class="steps" style="background-color: blue;">Step-1</div>
+                    <div class="steps">Step-2</div>
+                    <div class="steps">Step-3</div>
+                </div>
+
+            <h3> Enter Your Details</h3>
+
+            <input type="email" placeholder="Enter username">
+            <input type="password" placeholder="Enter Password">
+            <input type="password" placeholder="Confirm username">
+
+            <div class="btn-container">
+            <button type="button" onclick="next(this)" > Next </button>
+        </div>
+
+            <!-- </div> -->
+
+     </form>
+
+    </div>
+
+
+    <div id="form2" class="parent-conatiner" style="display: none;">
+    
+        <form>
+             
+            <div class="step step2">
+                <div class="steps">Step-1</div>
+                <div class="steps">Step-2</div>
+                <div class="steps">Step-3</div>
+            </div>
+
+
+               <!-- <div class="child-container"> -->
+   
+               <h3> Socials</h3>
+   
+               <input type="text" placeholder="Linkedin">
+               <input type="text" placeholder="Github">
+               <input type="text" placeholder="Medium">
+   
+               <div class="btn-container">
+               <button type="button" onclick="prev(this)"> Prev </button>
+               <button type="button" onclick="next(this)"> Next </button>
+               </div>
+   
+               <!-- </div> -->
+   
+        </form>
+   
+       </div>
+
+       <div id="form3" class="parent-conatiner" style="display: none;">
+    
+        <form>
+
+
+            <div class="step step3">
+                <div class="steps">Step-1</div>
+                <div class="steps">Step-2</div>
+                <div class="steps">Step-3</div>
+            </div>
+             
+               <!-- <div class="child-container"> -->
+   
+               <h3> Contacts</h3>
+   
+               <input type="text" placeholder="Enter Number">
+               <input type="text" placeholder="Enter Reviews">
+   
+               <div class="btn-container">
+                <button type="button" onclick="prev(this)"> Prev </button>
+                <button type="button"> Submit </button>
+                </div>
+   
+               <!-- </div> -->
+   
+        </form>
+   
+       </div>
+
+   
+   </div>
+    <script src="multistepform.js"></script>
+   
+
+
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+
+/* fonts */
+@font-face {
+    font-family: "Young Serif";
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+/* root */
+:root {
+    --clr-Nutmeg: #854632;
+    --clr-Dark-Raspberry: #7b284f;
+       
+    --clr-White: #ffffff;
+    --clr-Rose-White: #fff5fa;
+    --clr-Eggshell: #f3e6d8;
+    --clr-Light-Grey: #e4ded8;
+    --clr-Wenge-Brown: #5f574e;
+    --clr-Dark-Charcoal: #302d2c;
+
+
+    --ff-main: 'Outfit', sans-serif;
+    --ff-headings: 'Young Serif', serif;
+    --fs-main: 1rem;
+    --fs-headings: 1.75rem;
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: grid;
+    place-items: center;
+}
+
+
+
+body {
+    font-family: var(--ff-main);
+    font-weight: var(--fw-400);
+    font-size: var(--fs-main);
+    line-height: 1.5;
+    color: var(--clr-Wenge-Brown);
+    background: gray;
+}
+
+
+
+h1, h2, h3, h4 {
+    line-height: 1.2;
+    font-family: var(--ff-headings);
+    font-size: var(--fs-headings);
+    font-weight: 400;
+    color: var(--clr-Nutmeg);
+    margin-bottom: 1.75rem;
+}
+
+
+li {
+    padding-left: 1rem;
+    margin-bottom: .5rem;
+}
+
+li::marker {
+    color: var(--clr-Nutmeg);
+    font-weight: var(--fw-600);
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    font-style: italic;
+    color: var(--clr-Dark-Raspberry);
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    /* line-height: 1.6; */
+}
+
+.recipe-wrapper {
+    max-width: 45em;
+    padding: 1.75rem;
+    margin: 6rem 0;
+    border-radius: 1.5rem;
+    background: var(--clr-White);
+}
+
+
+
+hr {
+    outline: none;
+    border: none;
+    height: 1px;
+    background: var(--clr-Light-Grey);
+    margin-top: 2rem;
+}
+
+
+.header{
+    margin-bottom: 25px;;
+}
+
+.header h1{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    color: var(--clr-Dark-Charcoal);
+    font-weight: 400;
+}
+
+.recepie{
+    height: 60%;
+    max-width: 45em;
+}
+
+.prepration-time {
+    background: #FCEEFE;
+    padding: 10px;
+}
+
+.prepration-time h2 {
+    font-size: 1.3rem;
+    font-weight: 550;
+    color: var(--clr-Dark-Raspberry);
+    margin-bottom: .5rem;
+}
+
+
+.prepration-time ul{
+    margin-top: 20px;
+    padding-left: 1rem;;
+}
+
+.prepration-time ul li {
+    margin-bottom: 5px;
+}
+
+
+.ingredient {
+    margin-top: 30px;
+}
+
+
+.ingredient ul{
+    padding-left: 1.5rem;
+}
+
+.instructions{
+    margin-top: 2rem;;
+}
+
+.instructions ol{
+    padding-left: 1.25rem;;
+}
